@@ -1,0 +1,9 @@
+project: savantenvs/bitstruct
+target: pack-fuzz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pack-fuzz/testsuite
+cmds:
+  - cmd: /mayhem/pack-fuzz
+    libfuzzer: true
+    timeout: 30
