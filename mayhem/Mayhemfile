@@ -1,0 +1,7 @@
+project: savantenvs/bitstruct
+target: pack-fuzz-buggy-mhh-run-8
+# origin: https://app.mayhem.security/mayhemheroes/bitstruct/pack-fuzz/8
+cmds:
+  - cmd: /mayhem/pack-fuzz
+    libfuzzer: true
+    timeout: 30
